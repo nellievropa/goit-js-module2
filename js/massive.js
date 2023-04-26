@@ -51,7 +51,17 @@
 
 const friends = ["Mango", "Kiwi", "Poly", "Ajax"];
 
-console.log(friends[0]);
-console.log(friends[1]);
-console.log(friends[2]);
-console.log(friends[3]);
+// це неправильна і примітивна практика 
+// console.log(friends[0]);
+// console.log(friends[1]);
+// console.log(friends[2]);
+// console.log(friends[3]);
+
+// правильно буде використовувати FOR
+
+console.table(friends);
+const lastIndex = friends.length - 1;
+
+for (let i = 0; i = lastIndex; i += 1) {
+    console.log(i);
+}
