@@ -59,9 +59,53 @@ const friends = ["Mango", "Kiwi", "Poly", "Ajax"];
 
 // правильно буде використовувати FOR
 
-console.table(friends);
-const lastIndex = friends.length - 1;
+// console.table(friends);
+// const lastIndex = friends.length - 1;
 
-for (let i = 0; i = lastIndex; i += 1) {
-    console.log(i);
-}
+// for (let i = 0; i < friends.length; i += 1) {
+//     friends[i] += `-${i}`;
+// }
+    // console.log(i);
+    // перебрати масив любої довжини
+    // console.log(friends[i]);
+// }
+// console.table(friends);
+
+
+// FOR of - записуеться по-іншому, але також перебирає
+
+// for (let friend of friends) {
+//     console.log(friend);
+// }
+
+// console.table(friends);
+
+// ЗАДАЧИ
+// Посчитать общую сумму покупок в корзине
+
+// const cart = [54, 28, 105, 70, 92, 17, 120];
+// let total = 0;
+//1. перебрать массив(получим доступ к елементам)
+//2. до цикла сделать переменну Общую
+//3. каждій елемент приплюсовать
+
+// for( let i = 0; i < cart.length; i +=1){
+//     console.log(cart[i]);
+
+//     total += cart[i];
+// }
+
+// console.log('Total: ', total);
+
+// якщо непотрібно змінювати данні всередені масиву - можна використати FOR of
+//  for (const value of cart) {
+//     total += value;
+//  }
+//  console.log('Total: ', total);
+
+//  Добавить каждому елементу 20% налога
+
+// for (let i = 0; i < cart.length; i += 1) {
+//     cart[i] = Math.round(cart[i] * 1.2);
+// }
+// console.log(cart);
