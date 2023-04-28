@@ -85,9 +85,9 @@ const friends = ["Mango", "Kiwi", "Poly", "Ajax"];
 
 // const cart = [54, 28, 105, 70, 92, 17, 120];
 // let total = 0;
-//1. перебрать массив(получим доступ к елементам)
-//2. до цикла сделать переменну Общую
-//3. каждій елемент приплюсовать
+// 1. перебрать массив(получим доступ к елементам)
+// 2. до цикла сделать переменну Общую
+// 3. каждій елемент приплюсовать
 
 // for( let i = 0; i < cart.length; i +=1){
 //     console.log(cart[i]);
@@ -109,3 +109,65 @@ const friends = ["Mango", "Kiwi", "Poly", "Ajax"];
 //     cart[i] = Math.round(cart[i] * 1.2);
 // }
 // console.log(cart);
+
+
+// запишемо через ФУНКЦІЮ для декількох масивів данних
+
+// const cart = [54, 28, 105, 70, 92, 17, 120];
+// let total = 0;
+
+// for (const value of cart) {
+//     total += value;
+// }
+// console.log('Total: ', total);
+
+
+const calculateTotalPrice = function (items) {
+    console.log('items внутри функции' , items);
+
+    let total = 0; 
+    for (const item of items) {
+       
+        total += item;
+    }
+    return total;
+}
+
+console.log(calculateTotalPrice([1, 8, 98, 54]));
+console.log(calculateTotalPrice([28, 105, 70, 92, 17, 120]));
+
+//   можно записть по-другому, с использованием переменной
+const result1 = calculateTotalPrice([100, 88, 982, 543]);
+console.log(result1);
+
+
+
+// із автоперевірки
+
+function getExtremeElements(arrays) {  
+    // Change code below this line
+    for (const array of arrays) {
+console.log('${array[0]}, ${array[array.length]}');
+    }
+   
+    // Change code above this line
+  }
+  console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+  console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
+
+
+  console.log(getExtremeElements([1, 2, 3, 4, 5]));
+
+
+//   просто вивести данні масивів декількох 
+
+const logItems = function (items) {
+    for (const item of items) {
+        console.log(item);
+    }
+}
+
+console.log(["Earth", "Mars", "Venus"]);
+console.log(["apple", "peach", "pear", "banana"]);
+console.log([1, 2, 3, 4, 5]);
+  
