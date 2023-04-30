@@ -144,19 +144,18 @@ console.log(result1);
 
 // із автоперевірки
 
-function getExtremeElements(arrays) {  
-    // Change code below this line
-    for (const array of arrays) {
-console.log('${array[0]}, ${array[array.length]}');
-    }
-   
-    // Change code above this line
-  }
-  console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
-  console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
+function getExtremeElements(array) {  
+  // Change code below this line
 
+  let ExtremeElements = [array[0], array[array.length - 1]];
 
-  console.log(getExtremeElements([1, 2, 3, 4, 5]));
+return ExtremeElements;
+    
+  // Change code above this line
+}
+console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
+console.log(getExtremeElements([1, 2, 3, 4, 5]));
 
 
 //   просто вивести данні масивів декількох 
@@ -170,4 +169,41 @@ const logItems = function (items) {
 console.log(["Earth", "Mars", "Venus"]);
 console.log(["apple", "peach", "pear", "banana"]);
 console.log([1, 2, 3, 4, 5]);
+
+
+
+// SPLIT для функцій!
   
+function splitMessage(message, delimiter) {
+  let words;
+  // Change code below this line
+words = (message.split(delimiter));
+  // Change code above this line
+  return words;
+}
+console.log(splitMessage("Mango hurries to the train", " "));
+console.log(splitMessage("Mango", ""));
+console.log(splitMessage("best_for_week", "_"));
+
+// Із автоперевірки - не працює
+// function calculateEngravingPrice(message, pricePerWord) {
+//     // Change code below this line
+//     let words;
+//     let total = 0;
+  
+//     words = (message.split(" "));
+//     total = words.length * pricePerWord;
+
+//     return total;
+// }
+// console.log(calculateEngravingPrice(["JavaScript is in my blood", 10]));
+
+
+function slugify(title) {
+    // Change code below this line
+    let text;
+    // let slug;
+    text = title.toLowerCase();
+
+    console.log(slugify("Arrays for begginers"));
+}
