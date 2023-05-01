@@ -65,7 +65,7 @@
 
 // Перетворюємо для функций
 
-const logins = ['dfdretefd', 'mnkjiuuyjh', 'qwqeqewrwre', 'popolkkjhiuj', 'zxzxzsaxz'];
+// const logins = ['dfdretefd', 'mnkjiuuyjh', 'qwqeqewrwre', 'popolkkjhiuj', 'zxzxzsaxz'];
 
 
 // const findLogin = function (allLogins, loginToFind) {
@@ -86,23 +86,23 @@ const logins = ['dfdretefd', 'mnkjiuuyjh', 'qwqeqewrwre', 'popolkkjhiuj', 'zxzxz
 
 // запишемо через тернарник :
 
-const findLogin = function (allLogins, loginToFind) {
-    // const message = allLogins.includes(loginToFind) - а взагалі можно зробити так 
-    return allLogins.includes(loginToFind)
-        ? `Пользователь ${loginToFind} найден`
-        : `Пользователь ${loginToFind} не найден`;
+// const findLogin = function (allLogins, loginToFind) {
+//     // const message = allLogins.includes(loginToFind) - а взагалі можно зробити так 
+//     return allLogins.includes(loginToFind)
+//         ? `Пользователь ${loginToFind} найден`
+//         : `Пользователь ${loginToFind} не найден`;
     
-    return message;
+//     return message;
 
-}
+// }
 
 
 
-console.log(findLogin(logins, 'dfdreтreretefd'));
-console.log(findLogin(logins, 'mnkjiuuyjh'));
-console.log(findLogin(logins, 'qwqeqewrwre'));
-console.log(findLogin(logins, 'popolkmdmddmkjhiuj'));
-console.log(findLogin(logins, 'zxzxzsaxz'));
+// console.log(findLogin(logins, 'dfdreтreretefd'));
+// console.log(findLogin(logins, 'mnkjiuuyjh'));
+// console.log(findLogin(logins, 'qwqeqewrwre'));
+// console.log(findLogin(logins, 'popolkmdmddmkjhiuj'));
+// console.log(findLogin(logins, 'zxzxzsaxz'));
 
 
 
@@ -126,8 +126,42 @@ console.log(findLogin(logins, 'zxzxzsaxz'));
 //   }
 
 
-const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
-const newClients = ['Peach', 'Houston'];
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
 
-const allClients = oldClients.concat(newClients); // Change this line
-console.log(allClients);
+// const allClients = oldClients.concat(newClients); // Change this line
+// console.log(allClients);
+
+// із автоперевірки 
+
+function findLongestWord(string) {
+    // Change code below this line
+  const word = string.split(" ");
+  console.log(word);
+  let longestWord = '';
+  
+  for (let i = 0; i <= word.length - 1; i += 1){
+     if (word[i].length > longestWord.length) {
+   longestWord = word[i];
+    // console.log(longestWord);
+ 
+  } longestWord = longestWord;
+  //   console.log(word[i+1]);
+  }
+ return longestWord;
+  // Change code above this line
+}
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+
+function createArrayOfNumbers(min, max) {
+    const numbers = [];
+       let ArrayOfNumbers = numbers[min];
+    // Change code below this line
+  for (let i = min; i <= max; i += 1) {
+    ArrayOfNumbers = [numbers.push(i)];
+  }
+    // Change code above this line
+    return numbers;
+  }
+console.log(createArrayOfNumbers(1, 3));
+console.log(createArrayOfNumbers(14, 17));
