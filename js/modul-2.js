@@ -77,3 +77,5 @@ function calculateTotalPrice(order) {
     return total;
   }
   console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+  

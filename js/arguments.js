@@ -75,3 +75,18 @@ const filterNunmers = function (array,...args) {
 console.log(filterNunmers([1, 2, 3, 4, 5], 10, 14, 2, 3));
 console.log(filterNunmers([10, 23, 31, 42, 51], 10, 14, 23));
 console.log(filterNunmers([100, 200, 300, 400, 500], 17, 16, 200));
+
+// cтворити новий масив з общих елементів із автоперевірки\
+function getCommonElements(array1, array2) {
+    // Change code below this line
+  const CommonElements = [];
+  
+    for (const element of array1) {
+      if (array2.includes(element)) {
+        CommonElements.push(element);
+      }
+    }
+  
+  return CommonElements;
+   // Change code above this line
+  }

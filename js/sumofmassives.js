@@ -50,3 +50,22 @@ for (let i = 0; i <= numbers.length - 1; i += 1) {
  console.log(filterArray([1, 2, 3, 4, 5], 3));
  console.log(filterArray([1, 2, 3, 4, 5], 4));
  console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+
+// створити масив парних чисел із автоперевірки
+ function getEvenNumbers(start, end) {
+    // Change code below this line
+ let EvenNumbers = [];
+   
+   for (i = start; i <= end; i +=1) {
+     EvenNumbers.push(i);
+     console.log(EvenNumbers);
+     if (number % 2 === 0) {
+       EvenNumbers.push(number);
+     }
+   }
+     
+ return EvenNumbers;
+ 
+     // Change code above this line
+   }
